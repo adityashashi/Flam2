@@ -1,0 +1,21 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "EdgeDetectionApp"
+include ':app'
+
+// Include OpenCV module (uncomment and adjust path when OpenCV SDK is added)
+// include ':opencv'
+// project(':opencv').projectDir = new File('path/to/OpenCV-android-sdk/sdk')
